@@ -6,7 +6,7 @@ var tableData = data;
 var button = d3.select("#filter-btn");
 
 // Getting a reference to the input element on the page
-var form = d3.select("#form");
+var form = d3.select("form");
 
 // Get a reference to the table body
 var tbody = d3.select("tbody");
@@ -28,13 +28,24 @@ function runEnter() {
   var inputValue = inputElement.property("value");
 
   console.log(inputValue);
-  console.log(tableData);
 
   var filteredData = tableData.filter(event => event.datetime === inputValue);
 
   console.log(filteredData);
 
+  filteredData.forEach(function(ufo) {
+    console.log(ufo);
+    var row = tbody.append("tr");
+    Object.entries(ufo).forEach(function([key, value]) {
+        console.log(key, value);
+        // Append a cell to the row
+        var cell = row.append("td");
+        cell.text(value);
+    });
+});
+
 }
+
   
   /*
   // BONUS: Calculate summary statistics for the age field of the filtered data
