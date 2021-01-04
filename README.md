@@ -16,4 +16,4 @@ You can handle this... right? The planet Earth needs to know what we have found!
 
 ![alt text][logo]
 
-[logo]: Images/alien.gif "aLiEnS"
+[logo]: pic/alien.gif "aLiEnS"
