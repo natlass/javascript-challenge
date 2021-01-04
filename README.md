@@ -12,3 +12,8 @@ That's why we are hiring you. We need you to write code that will create a table
 
 
 You can handle this... right? The planet Earth needs to know what we have found!
+
+
+![alt text][logo]
+
+[logo]: Images/alien.gif "aLiEnS"
